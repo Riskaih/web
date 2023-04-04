@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-s">
+        <title>document</title>
+        <style type="text/css">
+            .red-elip {
+                background-color: #FF4136;
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .heart div {
+                background: red;
+                width: 71px;
+                height: 126px;
+                top: 100px;
+                display: block;
+                position: absolute;
+                border-radius: 50%;
+
+            }
+            .left {
+                left: 45px;
+            }
+            .right {
+                right: 45px;
+            }
+            .heart {
+                width: 200px;
+                height: 200px;
+                top: 50%;
+                left: 50%;
+                z-index: 1;
+                display: block;
+                position: absolute;
+                transform: translate(-50%,-50%);
+            }
+            .heart div {
+                background: #ff0000;
+                width: 71px;
+                height: 126px;
+                top: 40px;
+                display: block;
+                position: absolute;
+                border-radius: 50%;
+            }
+            .left {
+                left: 45px;
+                transform: rotate(330deg);
+            }
+            .right {
+                right: 45px;
+                transform: rotate(30deg);
+            }
+            
+            .heart {
+                width: 200px;
+                height: 200px;
+                top: 50%;
+                left: 50%;
+                z-index: 1;
+                display: block;
+                position: absolute;
+                transform: translate(-50%,-50%);
+                animation: heart 2s ease infinite;
+            }
+            @keyframes heart {
+                96% {
+                    transform: translate(-50%,-50%) scale(.8,.8);
+                }
+                100% {
+                    transform: translate(-50%,-50%) scale(1,1);
+                }
+            }
+            .heart div {
+                background: #ff0000;
+                width: 71px;
+                height: 126px;
+                top: 40px;
+                display: block;
+                position: absolute;
+                border-radius: 50%;
+            }
+            .left {
+                left: 45px;
+                transform: rotate(330deg);
+            }
+            .right {
+                right: 45px;
+                transform: rotate(30deg);
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+
+        <table border="1" style="width: 100%;">
+            <tr>
+                <td>
+                    <b>b có thích t không?</b>
+                </td>
+
+            </tr>
+            <tr>
+                <td>có</td>
+                <td>có</td>
+            </tr>
+        </table>
+        <div class="heart">
+            <div class="left"></div> 
+            <div class="right"></div> 
+        </div>
+
+    </body>
+</html>
